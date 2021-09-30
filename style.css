@@ -6,3 +6,12 @@ body {
     padding: 10px 10px 10px 10px;
     font-family: sans-serif;
 }
+
+h3 {
+    font-family: sans-serif;
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
