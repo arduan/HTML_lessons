@@ -7,10 +7,14 @@ body {
     font-family: sans-serif;
 }
 
-h3 {
+h1, h3 {
     font-family: sans-serif;
     color: red;
     border-bottom: 1px solid red;
+}
+
+h3 {
+    border-bottom: 2px solid green;
 }
 
 #blue {
