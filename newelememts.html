@@ -6,13 +6,19 @@
     <script>
         function addItem() {
             var newItem = document.createElement("div");
-            newItem.innerHTML = "Новый элемент"
+            newItem.innerHTML = document.getElementById("box").value;
             document.getElementById("list").appendChild(newItem);
         }
     </script>
 </head>
 <body>
-<div id="list" onclick="addItem()">Щелкни, чтобы добавить элемент</div>
+<input type="text" id="box" value="Введите задачу сюда">
+<br/>
+<input type="button" value="Добавить элемент" onclick="addItem();"/>
+<div id="list">
+
+</div>
+<br/>
 
 </body>
 </html>
