@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список задач</title>
+    <script>
+        function addItem() {
+            var newItem = document.createElement("div");
+            newItem.innerHTML = document.getElementById("box").value;
+            newItem.onclick = removeItem;
+            document.getElementById("list").appendChild(newItem);
+        }
+
+        function removeItem() {
+            document.getElementById("list").removeChild(this);
+        }
+    </script>
+</head>
+<body>
+<p>Задачи для вставки</p>
+<br/>
+<input type="text" id="box" value="Введите задачу сюда"/>
+<br/>
+<input type="button" value="Добавить элемент" onclick="addItem();"/>
+<br/>
+<div id="list"></div>
+
+
+</body>
+</html>
